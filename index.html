@@ -48,7 +48,7 @@
 
             <div class="right-container-card 
                         absolute 
-                        w-[220px] h-[90px]
+                        lg:w-[200px] lg:h-[90px]
                         lg:bottom-0.5 lg:left-10
                         md:w-[190px] md:h-20 md:-bottom-5 md:-left-5
                         sm:w-[240px] sm:h-[105px] sm:bottom-2 sm:left-[15%]
@@ -62,10 +62,11 @@
                     
                     src="./images/star.png" alt="star-icon-img">
                 <div>    
-                    <h3 class="text-[#1C1C1C] font-bold 
+                    <h3 class="text-[#1C1C1C] font-extrabold 
+                                text-xl
                                 sm:text-[28px] 
                                 md:text-xl 
-                                text-xl">5.00</h3>
+                                lg:text-[22px]">5.00</h3>
                     <p class="text-[#777777] 
                                 text-sm
                                 sm:text-[17px]
@@ -89,10 +90,10 @@
                             max-[400px]:text-3xl
                             max-[639px]:text-[35px]">Our Featured Products</h2>
                 <p class="
-                    mx-auto text-[15px] text-[#777777] mt-4 mb-10 leading-6 
+                    mx-auto text-[15px] text-[#777777] mt-4 mb-10 leading-6
                     max-[400px]:text-[14px] 
                     md:max-w-[90%] 
-                    lg:max-w-[60%] ">
+                    lg:max-w-[70%] ">
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
             </div>
 
@@ -169,53 +170,88 @@
         </section>
 
         <!-- Client Review Section -->
-        <section class="bg-linear-to-r from-[#ff8938] to-[#ff0000] sm:w-[90%] md:w-[86%] mx-auto my-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:px-[60px] md:py-[90px] rounded-[10px] max-[476px]:py-[60px] max-[476px]:px-[40px]">
+        <section class="bg-linear-to-r from-[#ff8938] to-[#ff0000] 
+                        mx-auto my-16 rounded-[10px] grid
+                        lg:grid-cols-2 lg:gap-10 lg:px-[60px] lg:py-[90px]
+                        sm:w-[90%]
+                        md:w-[86%] md:px-[60px] md:py-[60px] md:grid-rows-2 
+                        lg:grid-rows-1
+                        max-[500px]:py-[50px] max-[500px]:px-[20px] max-[500px]:gap-16">
             
             <!-- Client Review Left part -->
-            <div class="review-left flex items-center">
+            <div class="review-left flex 
+                        lg:items-center
+                        ">
                 <div class="space-y-[24px]">
-                    <h2 class="text-[#F4F4F4] text-4xl  md:text-5xl font-black md:leading-15">Meet Our Super Clients</h2>
-                    <p class="text-[#F4F4F4] leading-6 md:text-[16px] text-[14px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                    <h2 class="text-[#F4F4F4] text-4xl font-black 
+                                md:text-5xl md:leading-15">
+                            Meet Our Super Clients</h2>
+                    <p class="text-[#F4F4F4] leading-6 text-[14px]
+                                md:text-[16px]">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
                     <button class="outline-none boder-r-10 px-5 py-3 bg-amber-600 rounded-md flex align-middle gap-2  bg-white font-extrabold"><span class="bg-linear-to-r from-[#ff8938] to-[#ff0000] bg-clip-text text-transparent">Show All</span></button>
                 </div>
             </div>
             
             
             <!-- Client Review Right part -->
-            <div class="review-right relative flex justify-end max-[476px]:my-12">
-                
+            <div class="review-right relative 
+                        flex justify-end
+                        md:-mt-20
+                        max-[500px]:justify-center
+                        ">
                 <div class="space-y-16">
                     <!-- Review Card-1 -->
-                    <div class="review-card1 bg-white rounded-[10px] max-w-[400px] md:h-[210px] max-[476px]:max-h-[180px] px-[40px] py-[30px] md:px-[45px] md:py-[35px] absolute 
-                    -left-[20px] top-[25%] z-5  ">
+                    <div class="review-card1 bg-white rounded-[10px] px-[40px] py-[30px] 
+                                absolute -left-[20px] top-[25%] z-5 max-w-[400px]
+                                md:h-[210px] md:px-[45px] md:py-[35px] md:left-[5px]
+                                max-[400px]:w-[93%] max-[500px]:max-h-[180px] max-[500px]:left-[19%]
+                                max-[500px]:w-[82%]
+
+                                  ">
                             <p class="text-[#777777] md:leading-6 md:text-[16px] text-[13px] md:pb-[18px] pb-[16px]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
                             <p class="text-[#1C1C1C] md:text-[16px] text-[13px] font-bold md:pb-[7px] pb-[5px]">Ilham Yuda</p>
                             <p class="text-[#777777] md:text-[16px] text-[13px] font-medium">Businessman</p>
                             <div class="absolute -top-[20px] -left-[20px] bg-white p-1 rounded-full">
-                                <img src="./images/client.png" alt="client">
+                                <img class="max-[400px]:w-[50px] max-[400px]:h-[50px]
+                                            max-[500px]:w-[57px] max-[500px]:h-[57px]" 
+                                    src="./images/client.png" alt="client">
                             </div>
                     </div>
                     
                     <!-- Review Card-2 -->
                     <div class="relative">
-                        <div class="review-card2 bg-white rounded-[10px] max-w-[400px] h-[210px] max-[476px]:max-h-[180px] px-[40px] py-[30px] md:px-[45px] md:py-[35px] opacity-30">
+                        <div class="review-card2 bg-white rounded-[10px] max-w-[400px] 
+                                    h-[210px] px-[40px] py-[30px] opacity-30 
+                                    md:px-[45px] md:py-[35px] 
+                                    max-[400px]:w-[93%] max-[500px]:max-h-[180px] 
+                                    max-[500px]:w-[83%]
+                                    ">
                                 <p class="text-[#777777] md:leading-6 md:text-[16px] text-[13px] md:pb-[18px] pb-[16px]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
                                 <p class="text-[#1C1C1C] md:text-[16px] text-[13px] font-bold md:pb-[7px] pb-[5px]">Ilham Yuda</p>
                                 <p class="text-[#777777] leading-6 md:text-[16px] text-[14px] font-medium">Businessman</p>
                                 <div class="absolute -top-[20px] -left-[20px] bg-white p-1 rounded-full">
-                                    <img src="./images/client.png" alt="client-icon">
+                                    <img class="max-[400px]:w-[50px] max-[400px]:h-[50px]
+                                                max-[500px]:w-[57px] max-[500px]:h-[57px]"
+                                        src="./images/client.png" alt="client-icon">
                                 </div>
                         </div>
                     </div>
                     
                     <!-- Review Card-3 -->
                     <div class="relative">
-                        <div class="review-card3 bg-white rounded-[10px] max-w-[400px] md:h-[210px] max-[476px]:max-h-[180px] px-[40px] py-[30px] md:px-[45px] md:py-[35px] opacity-30">
+                        <div class="review-card3 bg-white rounded-[10px] max-w-[400px] px-[40px] py-[30px] opacity-30
+                                md:h-[210px] md:px-[45px] md:py-[35px]
+                                max-[400px]:w-[93%] max-[500px]:max-h-[180px]   
+                                max-[500px]:w-[83%] 
+                                ">
                                 <p class="text-[#777777] md:leading-6 md:text-[16px] text-[13px] md:pb-[18px] pb-[16px]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
                                 <p class="text-[#1C1C1C] md:text-[16px] text-[13px] font-bold md:pb-[7px] pb-[5px]">Ilham Yuda</p>
                                 <p class="text-[#777777] leading-6 md:text-[16px] text-[14px] font-medium">Businessman</p>
                                 <div class="absolute -top-[20px] -left-[20px] bg-white p-1 rounded-full">
-                                    <img src="./images/client.png" alt="client-icon">
+                                    <img class="max-[400px]:w-[50px] max-[400px]:h-[50px]
+                                                max-[500px]:w-[57px] max-[500px]:h-[57px]" 
+                                        src="./images/client.png" alt="client-icon">
                                 </div>
                         </div>
                     </div>
