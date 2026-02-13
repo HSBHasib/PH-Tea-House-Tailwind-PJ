@@ -174,7 +174,8 @@
                         mx-auto my-16 rounded-[10px] grid
                         lg:grid-cols-2 lg:gap-10 lg:px-[60px] lg:py-[90px]
                         sm:w-[90%]
-                        md:w-[86%] md:px-[60px] md:py-[60px] md:grid-rows-2 
+                        max-[767px]:p-[60px] max-[767px]:gap-20
+                        md:w-full md:px-[60px] md:py-[60px] md:grid-rows-2 
                         lg:grid-rows-1
                         max-[500px]:py-[50px] max-[500px]:px-[20px] max-[500px]:gap-16">
             
@@ -197,16 +198,18 @@
             <!-- Client Review Right part -->
             <div class="review-right relative 
                         flex justify-end
-                        md:-mt-20
-                        max-[500px]:justify-center
-                        ">
+                        lg:mt-0
+                        max-[767px]:justify-end
+                        md:-mt-26 max-[767px]:justify-center
+                        max-[500px]:justify-center">
                 <div class="space-y-16">
                     <!-- Review Card-1 -->
                     <div class="review-card1 bg-white rounded-[10px] px-[40px] py-[30px] 
                                 absolute -left-[20px] top-[25%] z-5 max-w-[400px]
-                                md:h-[210px] md:px-[45px] md:py-[35px] md:left-[5px]
-                                max-[400px]:w-[93%] max-[500px]:max-h-[180px] max-[500px]:left-[10%]
-                                max-[500px]:w-[82%]
+                                max-[767px]:h-[210px]
+                                md:h-[230px] md:px-[45px] md:py-[35px] md:left-[5px]
+                                max-[400px]:w-[93%] max-[500px]:max-h-[180px] max-[400px]:left-[10%]
+                                max-[500px]:w-[82%] max-[500px]:left-[19%]
 
                                   ">
                             <p class="text-[#777777] md:leading-6 md:text-[16px] text-[13px] md:pb-[18px] pb-[16px]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
@@ -223,7 +226,7 @@
                     <div class="relative">
                         <div class="review-card2 bg-white rounded-[10px] max-w-[400px] 
                                     h-[210px] px-[40px] py-[30px] opacity-30 
-                                    md:px-[45px] md:py-[35px] 
+                                    md:h-[230px] md:px-[45px] md:py-[35px] 
                                     max-[400px]:w-[93%] max-[500px]:max-h-[180px] 
                                     max-[500px]:w-[83%]
                                     ">
@@ -241,7 +244,7 @@
                     <!-- Review Card-3 -->
                     <div class="relative">
                         <div class="review-card3 bg-white rounded-[10px] max-w-[400px] px-[40px] py-[30px] opacity-30
-                                md:h-[210px] md:px-[45px] md:py-[35px]
+                                md:h-[230px] md:px-[45px] md:py-[35px]
                                 max-[400px]:w-[93%] max-[500px]:max-h-[180px]   
                                 max-[500px]:w-[83%] 
                                 ">
